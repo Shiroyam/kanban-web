@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "lint:write": "eslint --debug src/ --fix",
     "prettier": "prettier --write src/**/*.tsx",
-    "stylelint": "stylelint \"**/*.css\" --fix"
+    "stylelint": "stylelint \"**/*.scss\" --fix"
   },
   "husky": {
     "hooks": {
@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.21",
@@ -39,10 +40,11 @@
     "eslint-plugin-react": "^7.31.10",
     "husky": "^8.0.1",
     "prettier": "2.7.1",
-    "stylelint": "^14.13.0",
+    "stylelint": "^14.14.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-order": "^5.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
