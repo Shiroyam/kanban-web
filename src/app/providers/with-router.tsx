@@ -1,0 +1,12 @@
+import { Suspense } from "react"
+import { BrowserRouter } from "react-router-dom"
+
+const withRouter = (component: () => React.ReactNode) => () =>
+  (
+    <BrowserRouter>
+      <Suspense>{component()}</Suspense>
+    </BrowserRouter>
+  )
+
+withRouter.displayName = "withRouter"
+export default withRouter
