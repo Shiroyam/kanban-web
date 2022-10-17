@@ -1,0 +1,18 @@
+.task {
+    background-color: var(--color-dark);
+    width: 20rem;
+    min-height: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    
+    .title {
+        color: var(--color-white);
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .substask {
+        color: var(--color-gray);
+    }
+}
