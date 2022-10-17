@@ -21,7 +21,8 @@
     "*.(ts|tsx)": [
       "npm run lint:write",
       "npm run prettier",
-      "npm run stylelint"
+      "npm run stylelint",
+      "git add"
     ]
   },
   "dependencies": {
