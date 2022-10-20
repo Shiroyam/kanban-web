@@ -1,5 +1,5 @@
 .checkbox {
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
   background-color: var(--color-dark);
   font: inherit;
@@ -16,7 +16,7 @@
     border: 0.15em solid var(--color-primary);
   }
 
-  &:checked:before {
+  &:checked::before {
     content: "✔";
   }
 }
