@@ -1,0 +1,22 @@
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--color-dark);
+  font: inherit;
+  width: 1.2em;
+  height: 1.2em;
+  border: 0.1em solid var(--color-gray);
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  &:checked {
+    background-color: var(--color-primary);
+    border: 0.15em solid var(--color-primary);
+  }
+
+  &:checked:before {
+    content: "✔";
+  }
+}
