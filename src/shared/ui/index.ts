@@ -1,4 +1,5 @@
 export * from "./button"
+export * from "./button-board"
 export * from "./checkbox"
 export * from "./title"
 export * from "./select"
