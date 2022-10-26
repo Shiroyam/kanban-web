@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss"
+import styles from "./index.module.scss"
 import cn from "classnames"
 
 interface TitleProps {

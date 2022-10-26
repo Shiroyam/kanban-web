@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, SelectHTMLAttributes } from "react"
-import styles from "./styles.module.scss"
+import styles from "./index.module.scss"
 
 type SelectProps = DetailedHTMLProps<
   SelectHTMLAttributes<HTMLSelectElement>,
