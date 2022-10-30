@@ -6,7 +6,7 @@ interface SubtaskProps {
   text: string
 }
 
-export const Subtask = ({ before, text }: SubtaskProps) => {
+export const SubtaskPreview = ({ before, text }: SubtaskProps) => {
   return (
     <div className={styles.subtask}>
       {before}
