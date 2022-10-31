@@ -8,7 +8,7 @@ interface ButtonProps
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  active: boolean
+  active?: boolean
   themes: "create" | "board"
 }
 
@@ -27,7 +27,9 @@ export const ButtonBoard = ({
       })}
       {...props}
     >
-      <ColumnsSVG className={cn(styles.svg, { [styles.active]: active })} />
+      {themes == "board" && (
+        <ColumnsSVG className={cn(styles.svg, { [styles.active]: active })} />
+      )}
       <span className={styles.text}>{children}</span>
     </button>
   )
