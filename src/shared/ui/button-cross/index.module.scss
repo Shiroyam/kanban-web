@@ -1,0 +1,12 @@
+.svg {
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  &:hover {
+    fill: var(--color-white);
+  }
+  
+  &:active {
+    scale: 0.9;
+  }
+}
