@@ -2,12 +2,15 @@ import styles from "./index.module.scss"
 
 interface PopupProps {
   children: React.ReactNode
+  popupRef: React.RefObject<HTMLDivElement>
 }
 
-export const Popup = ({ children }: PopupProps) => {
+export const Popup = ({ children, popupRef }: PopupProps) => {
   return (
     <div className={styles.popup}>
-      <div className={styles.content}>{children}</div>
+      <div ref={popupRef} className={styles.content}>
+        {children}
+      </div>
     </div>
   )
 }
