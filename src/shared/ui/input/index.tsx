@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, InputHTMLAttributes } from "react"
+import cn from "classnames"
 import styles from "./index.module.scss"
 
 type InputProps = DetailedHTMLProps<
@@ -6,11 +7,11 @@ type InputProps = DetailedHTMLProps<
   HTMLInputElement
 >
 
-export const Input = ({ placeholder, ...props }: InputProps) => {
+export const Input = ({ placeholder, className, ...props }: InputProps) => {
   return (
     <input
       placeholder={placeholder}
-      className={styles.input}
+      className={cn(styles.input, className)}
       {...props}
     ></input>
   )

@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, SelectHTMLAttributes } from "react"
+import cn from "classnames"
 import styles from "./index.module.scss"
 
 type SelectProps = DetailedHTMLProps<
@@ -6,9 +7,18 @@ type SelectProps = DetailedHTMLProps<
   HTMLSelectElement
 >
 
-export const Select = ({ children, value, onChange }: SelectProps) => {
+export const Select = ({
+  children,
+  className,
+  value,
+  onChange,
+}: SelectProps) => {
   return (
-    <select className={styles.select} value={value} onChange={onChange}>
+    <select
+      className={cn(styles.select, className)}
+      value={value}
+      onChange={onChange}
+    >
       {children}
     </select>
   )

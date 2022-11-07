@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react"
+import cn from "classnames"
 import styles from "./index.module.scss"
 
 type ButtonProps = DetailedHTMLProps<
@@ -6,9 +7,9 @@ type ButtonProps = DetailedHTMLProps<
   HTMLButtonElement
 >
 
-export const Button = ({ children, ...props }: ButtonProps) => {
+export const Button = ({ children, className, ...props }: ButtonProps) => {
   return (
-    <button className={styles.button} {...props}>
+    <button className={cn(styles.button, className)} {...props}>
       {children}
     </button>
   )

@@ -15,12 +15,13 @@ interface ButtonProps
 export const ButtonBoard = ({
   themes,
   active,
+  className,
   children,
   ...props
 }: ButtonProps) => {
   return (
     <button
-      className={cn(styles.button, {
+      className={cn(styles.button, className, {
         [styles.active]: active,
         [styles.create]: themes == "create",
         [styles.board]: themes == "board",
