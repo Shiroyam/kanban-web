@@ -1,4 +1,6 @@
 import React from "react"
+import { TypedUseSelectorHook, useSelector, useDispatch } from "react-redux"
+import { AppDispatch, RootState } from "../../app/store"
 
 type Event = MouseEvent | TouchEvent
 
@@ -25,3 +27,7 @@ export const useOnClickOutside = <T extends HTMLElement = HTMLElement>(
     }
   }, [ref, handler])
 }
+
+export const useTypesSelector: TypedUseSelectorHook<RootState> = useSelector
+
+export const useAppDispatch = () => useDispatch<AppDispatch>()
