@@ -1,0 +1,13 @@
+.aside {
+  width: 25rem;
+  height: 100vh;
+  border-right: 0.1rem solid var(--color-gray);
+
+  .logo {
+    padding: 2rem;
+  }
+  
+  .title {
+    padding: 0.5rem 0 1rem 2rem;
+  }
+}
