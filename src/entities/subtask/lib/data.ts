@@ -38,7 +38,7 @@ export const data: ISubtaskData[] = [
   },
   {
     id: 6,
-    taskId: 3,
+    taskId: 2,
     name: "Talk to potential customers about our proposode solution and ask for fair price expectancy",
     active: true,
   },
